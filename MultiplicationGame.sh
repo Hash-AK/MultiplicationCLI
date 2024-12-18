@@ -97,7 +97,16 @@ MakeADivision(){
 }
 #Welcome message, ask the user to clear the terminal for better visibility
 echo "${BLUE}" 
-figlet "MultiplicationCLI"
+
+echo "  __  __       _ _   _       _ _           _   _              _____ _      _____ ";
+echo " |  \/  |     | | | (_)     | (_)         | | (_)            / ____| |    |_   _|";
+echo " | \  / |_   _| | |_ _ _ __ | |_  ___ __ _| |_ _  ___  _ __ | |    | |      | |  ";
+echo " | |\/| | | | | | __| | '_ \| | |/ __/ _\` | __| |/ _ \| '_ \| |    | |      | |  ";
+echo " | |  | | |_| | | |_| | |_) | | | (_| (_| | |_| | (_) | | | | |____| |____ _| |_ ";
+echo " |_|  |_|\__,_|_|\__|_| .__/|_|_|\___\__,_|\__|_|\___/|_| |_|\_____|______|_____|";
+echo "                      | |                                                        ";
+echo "                      |_|                                                        ";
+
 echo "${NC}"
 echo "MultiplicationCLI : a Bash multiplication & division game"
 echo ""
