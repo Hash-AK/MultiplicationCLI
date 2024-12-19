@@ -4,6 +4,7 @@
 stty erase ^H
 #This set the score to 0 (dont cheat)
 score=0
+life=3
 #This setup the colors with tput and if its not present it use ANSI colors
 if command -v tput >/dev/null 2>&1; then
     # Define colors using tput
@@ -136,7 +137,7 @@ if [[ -e ~/.config/MultiplicationCLI/config.conf ]]; then
         MakeANewConfig
         ;;
     *)
-        echo -e "Ok using that one then!" 
+        echo "Ok using that one then!" 
         ;;
 esac
 else
@@ -146,13 +147,12 @@ else
 fi
 #Tell the user how to fix a corrupted config file (why would it even be corrupted...? Who is going to manually modify it?)
 echo ""
-echo "If there's errors related to the connfig file, just delete it"
-echo "By typing (in annother terminal) 'rm /home/$USER/.config/MultiplicationCLI/config.conf'"
+echo "If there's errors related to the config file, just delete it"
+echo "By typing (in annother terminal) 'rm $HOME/.config/MultiplicationCLI/config.conf'"
 echo ""
 #Load the config file (even if its corrupted)
 array=( $(head -n 1 ~/.config/MultiplicationCLI/config.conf ) )
 operations=$(sed -n '2p' ~/.config/MultiplicationCLI/config.conf)
-life=3
 #Do exactly what it say : priting that you have 3 lives
 echo "You have 3 lives"
 #Man the game have more lives than us
@@ -185,4 +185,4 @@ echo "${RED}Game Over! Your score is : $score ! ${NC}"
 end_time=$(date +%s.%N)
 echo ""
 runtime=$( echo "$end_time - $start_time" | bc )
-echo "Exact runtime since you started answering: $runtime seconds"
+echo "Total time spent on the game.: $runtime seconds"
