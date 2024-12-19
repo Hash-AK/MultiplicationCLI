@@ -1,5 +1,6 @@
 # MultiplicationCLI
 A small multiplication/division Bash game
+![Demo of the game](https://cloud-3hlpjgrjv-hack-club-bot.vercel.app/0multi.gif)
 # Instalation
 On a Linux/WSL computer, open the terminal.  
 If you haven't already, install git
