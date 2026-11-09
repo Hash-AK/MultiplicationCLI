@@ -1,7 +1,7 @@
 # MultiplicationCLI
 A small multiplication/division Bash game
 ![Demo of the game](https://cloud-3hlpjgrjv-hack-club-bot.vercel.app/0multi.gif)
-# Instalation
+# Installation
 On a Linux/WSL computer, open the terminal.  
 If you haven't already, install git
 Then, type :
@@ -12,6 +12,6 @@ chmod +x MultiplicationGame.sh
 ./MultiplicationGame.sh
 ```
 If you dont have access to Linux, you _could_ use GH's Codespaces (type "," on this repo then you should be able to exec it from there"  
-I used StackOveflow and a bit of AI tfor code review/tuning/debugging  
+I used StackOveflow and a bit of AI for code review/tuning/debugging  
 # Instructions
 The instructions are all ingame :) 
